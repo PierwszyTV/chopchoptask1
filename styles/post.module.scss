@@ -1,0 +1,41 @@
+.container {
+  padding: 2rem;
+  text-align: center;
+
+  p {
+    padding: 2rem 5rem;
+    text-align: left;
+    line-height: 1.2;
+  }
+
+  h1 {
+    padding: 2rem 0;
+  }
+
+  img {
+    padding: 1rem 0;
+  }
+}
+
+.nav {
+  padding: 2rem 5rem 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  small {
+    justify-self: flex-start;
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  div {
+    justify-self: flex-end;
+    flex-grow: 1;
+    text-align: right;
+  }
+}
+
+.commentContainer {
+  padding: 2rem;
+}

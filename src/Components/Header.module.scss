@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  border-bottom: 1px solid black;
+}
+
+.navigation {
+  margin-right: auto;
+}
+
+.logout {
+  margin-left: auto;
+}
