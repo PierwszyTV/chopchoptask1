@@ -31,11 +31,16 @@ class Login extends Component {
 
                 sessionStorage.setItem('token', token);
 
-                Router.push('/', '/', {shallow: true});
+                this.redirectToHome();
             })
             .catch(error => {
                 NotificationManager.error('Incorrect data! Try again.')
             })
+    }
+
+    redirectToHome = () => {
+        Router.push('/index', '/', {shallow: true})
+            .then(resp => {});
     }
 
 

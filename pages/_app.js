@@ -1,4 +1,5 @@
 import '../styles/global.scss'
+import Head from 'next/head';
 import App from 'next/app';
 import {NotificationContainer} from 'react-notifications';
 
@@ -6,7 +7,7 @@ class MyApp extends App {
 
     state = {
         token: "",
-        tokenIsSet: false
+        tokenIsSet: false,
     }
 
     componentDidMount = () => {
@@ -29,6 +30,9 @@ class MyApp extends App {
 
         return (
             <div>
+                <Head>
+                    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+                </Head>
                 <NotificationContainer/>
                 <Component {...pageProps} />
             </div>

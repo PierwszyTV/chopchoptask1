@@ -5,7 +5,7 @@ import Post from "./Post";
 import styles from './Posts.module.scss';
 import Pagination from "./Pagination";
 import Router from "next/router";
-import Link from "next/Link";
+import Link from "next/link";
 
 class Posts extends Component {
 
